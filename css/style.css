@@ -1,0 +1,16 @@
+html {
+  background-color: grey;
+}
+
+body {
+  margin: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+#page {
+  margin: 0px 100px 0px 100px;
+  background-color: white;
+}
