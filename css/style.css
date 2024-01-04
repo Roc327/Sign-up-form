@@ -21,10 +21,26 @@ div#side-bar {
   margin: 0;
 }
 
-#side-bar p {
+#side-bar {
   background-image: url("../assets/chewy.jpg");
   height: 44em;
   background-repeat: no-repeat;
   width: 30em;
   background-position: center;
+  display: flex;
+}
+
+#side-bar p {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
+  font-size: 9px;
+}
+
+#main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
