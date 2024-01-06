@@ -1,5 +1,11 @@
+@font-face {
+  font-family: "Norse";
+  src: url('/Norse-Bold.otf') format('opentype');
+}
+
 html {
-  background-color: black;
+  background-color: rgb(54, 51, 51);
+  font-family: "Norse", "PT Sans", Calibri, Tahoma, sans-serif;
 }
 
 body {
@@ -14,7 +20,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0px 100px 0px 100px;
-  background-color: grey;
+  background-color: #fafae9;
 }
 
 div#side-bar {
