@@ -1,5 +1,5 @@
 html {
-  background-color: grey;
+  background-color: black;
 }
 
 body {
@@ -14,7 +14,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 0px 100px 0px 100px;
-  background-color: white;
+  background-color: grey;
 }
 
 div#side-bar {
