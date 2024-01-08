@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Norse";
-  src: url('/Norse-Bold.otf') format('opentype');
+  src: url("/Norse-Bold.otf") format("opentype");
 }
 
 html {
@@ -13,14 +13,14 @@ body {
 }
 
 p {
-  margin: 0;
+  margin: 0 65px 10px 45px;
 }
 
 #page {
   display: flex;
   flex-direction: row;
   margin: 0px 100px 0px 100px;
-  background-color: #fafae9;
+  justify-content: center;
 }
 
 div#side-bar {
@@ -49,4 +49,72 @@ div#side-bar {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  min-width: 530px;
+  background-color: #fafae9;
+}
+
+.name {
+  display: flex;
+  margin-left: 45px;
+  gap: 50px;
+}
+
+#fName-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+#lName-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+.contact-info {
+  display: flex;
+  margin-left: 45px;
+  gap: 50px;
+}
+
+#email-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+#phone-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+.password {
+  display: flex;
+  margin-left: 45px;
+  gap: 50px;
+}
+
+#pw-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+#pwConf-field {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 20px 5px 0px;
+}
+
+#submit-btn {
+  margin: 40px auto 20px 45px;
+}
+
+input {
+  border: 1px solid #8b4513;
+  border-radius: 4px;
+  height: 25px;
+  width: 250px;
+  padding-left: 10px;
 }

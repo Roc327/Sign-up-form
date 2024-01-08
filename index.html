@@ -16,6 +16,7 @@
           <p>
             This is not a real online service! You know you need something like
             this in your life to help you realize your deepest dreams.
+            <br />Sign up now to get started.
           </p>
           <p>You know you want to.</p>
           <p>Lets go!</p>
@@ -23,39 +24,51 @@
         <div id="form-data">
           <form action="../form-data/" method="post">
             <div class="name">
-              <label for="first_name">First Name:</label>
-              <input type="text" id="first_name" name="firstName" />
-              <label for="last_name">Last Name:</label>
-              <input type="text" id="last_name" name="lastName" />
+              <div id="fName-field">
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name" name="firstName" />
+              </div>
+              <div id="lName-field">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name" name="lastName" />
+              </div>
             </div>
             <div class="contact-info">
-              <label for="email">Email:</label>
-              <input
-                type="email"
-                id="email"
-                placeholder="you@email.com"
-                name="email"
-                required
-              />
-              <label for="phone-num">Phone number:</label>
-              <input
-                type="phone"
-                id="phone-num"
-                placeholder="555-555-5555"
-                name="phone"
-                required
-              />
+              <div id="email-field">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="you@email.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div id="phone-field">
+                <label for="phone-num">Phone number:</label>
+                <input
+                  type="phone"
+                  id="phone-num"
+                  placeholder="555-555-5555"
+                  name="phone"
+                  required
+                />
+              </div>
             </div>
             <div class="password">
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required />
-              <label for="confirm-pw">Confirm password:</label>
-              <input
-                type="password"
-                id="confirm-pw"
-                name="passwordConfirm"
-                required
-              />
+              <div id="pw-field">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required />
+              </div>
+              <div id="pwConf-field">
+                <label for="confirm-pw">Confirm password:</label>
+                <input
+                  type="password"
+                  id="confirm-pw"
+                  name="passwordConfirm"
+                  required
+                />
+              </div>
             </div>
             <div id="submit-btn">
               <button type="submit">Create account</button>
