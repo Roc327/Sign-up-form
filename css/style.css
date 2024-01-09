@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Norse";
-  src: url("/Norse-Bold.otf") format("opentype");
+  src: url("./assets/Norse-Bold.otf") format("opentype");
 }
 
 html {
@@ -13,13 +13,13 @@ body {
 }
 
 p {
-  margin: 0 65px 10px 45px;
+  margin: 0 auto 10px 45px;
 }
 
 #page {
   display: flex;
   flex-direction: row;
-  margin: 0px 100px 0px 100px;
+  margin: 100px 100px auto 100px;
   justify-content: center;
 }
 
@@ -34,6 +34,7 @@ div#side-bar {
   width: 30em;
   background-position: center;
   display: flex;
+  flex-shrink: 0;
 }
 
 #side-bar p {
@@ -45,12 +46,45 @@ div#side-bar {
   font-size: 9px;
 }
 
+#logo {
+  background: black;
+  opacity: 0.3;
+  width: inherit;
+  height: 100px;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-family: Norse;
+  font-size: 58px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#odin-logo {
+  height: 65px;
+  width: 60px;
+  margin-right: 10px;
+}
+
 #main-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  min-width: 530px;
+  /*justify-content: space-evenly;*/
+  min-width: 688px;
+  max-width: 1000px;
   background-color: #fafae9;
+}
+
+#text-content {
+  margin: auto auto 0 0;
+  font-size: 24px;
+  max-width: 900px;
+}
+
+#lets-go {
+  margin-top: 45px;
+  margin-bottom: 0;
 }
 
 .name {
@@ -117,4 +151,44 @@ input {
   height: 25px;
   width: 250px;
   padding-left: 10px;
+}
+
+#submit-btn button {
+  width: 220px;
+  height: 35px;
+  border: 0;
+  border-radius: 6px;
+  font-size: larger;
+  color: brown;
+  background-color: tan;
+}
+
+#member-login {
+  margin: 0 auto auto 45px;
+  font-size: 18px;
+}
+
+#member-login a:link {
+  color: #8b4513;
+  text-decoration: none;
+}
+
+#member-login a:visited {
+  text-decoration: none;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+.password input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:valid:required {
+  border-color: #8b4513;
+}
+
+input:focus:invalid {
+  border-color: #8b4513;
 }

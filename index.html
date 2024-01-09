@@ -9,17 +9,25 @@
   <body>
     <div id="page">
       <div id="side-bar">
+        <div id="logo">
+          <img
+            id="odin-logo"
+            src="./assets/odin-lined.png"
+            alt="Odin Logo"
+          />Chewy
+        </div>
         <p>Site by NJV Web Soulutions</p>
       </div>
       <div id="main-content">
         <div id="text-content">
           <p>
-            This is not a real online service! You know you need something like
-            this in your life to help you realize your deepest dreams.
-            <br />Sign up now to get started.
+            This is not a real online service! But you can look at this very
+            <b><i>handsome</i></b> dog. Isn't he the greatest, You know you need
+            something like this in your life to help you realize your deepest
+            dreams. <br />Sign up <i>now</i> to get started.
           </p>
-          <p>You know you want to.</p>
-          <p>Lets go!</p>
+          <p>You <i>know</i> you want to.</p>
+          <p id="lets-go">Lets go!</p>
         </div>
         <div id="form-data">
           <form action="../form-data/" method="post">
@@ -58,7 +66,13 @@
             <div class="password">
               <div id="pw-field">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  minlength="8"
+                  required
+                />
               </div>
               <div id="pwConf-field">
                 <label for="confirm-pw">Confirm password:</label>
@@ -66,6 +80,7 @@
                   type="password"
                   id="confirm-pw"
                   name="passwordConfirm"
+                  minlength="8"
                   required
                 />
               </div>
@@ -75,7 +90,9 @@
             </div>
           </form>
         </div>
-        <p>Already have an account? <a href="www.nosite.com">Log in</a></p>
+        <p id="member-login">
+          Already have an account? <a href="www.nosite.com">Log in</a>
+        </p>
       </div>
     </div>
   </body>
