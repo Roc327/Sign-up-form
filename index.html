@@ -34,11 +34,21 @@
             <div class="name">
               <div id="fName-field">
                 <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" name="firstName" />
+                <input
+                  type="text"
+                  id="first_name"
+                  name="firstName"
+                  autocomplete="given-name"
+                />
               </div>
               <div id="lName-field">
                 <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" name="lastName" />
+                <input
+                  type="text"
+                  id="last_name"
+                  name="lastName"
+                  autocomplete="family-name"
+                />
               </div>
             </div>
             <div class="contact-info">
@@ -49,6 +59,7 @@
                   id="email"
                   placeholder="you@email.com"
                   name="email"
+                  autocomplete="email"
                   required
                 />
               </div>
@@ -59,6 +70,7 @@
                   id="phone-num"
                   placeholder="555-555-5555"
                   name="phone"
+                  autocomplete="tel"
                   required
                 />
               </div>
@@ -70,6 +82,7 @@
                   type="password"
                   id="password"
                   name="password"
+                  autocomplete="new-password"
                   minlength="8"
                   required
                 />

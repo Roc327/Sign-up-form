@@ -1,6 +1,8 @@
 @font-face {
   font-family: "Norse";
-  src: url("./assets/Norse-Bold.otf") format("opentype");
+  src:
+    local("Norse"),
+    url("../assets/Norse-Bold.otf") format("opentype");
 }
 
 html {
